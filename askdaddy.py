@@ -6,4 +6,4 @@ fact = input ("State a fact please ")
 print("You said " + fact)
 
 for x in range(10):
-    print(fact)
+    print(fact + str(x))
