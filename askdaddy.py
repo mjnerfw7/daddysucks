@@ -82,9 +82,9 @@ class NeonMaze:
     def update(self, dt: float) -> None:
         if self.finished:
             return
-        turn = ("right" in self.keys or "d" in self.keys) - ("left" in self.keys or "q" in self.keys)
+        turn = ("right" in self.keys or "e" in self.keys) - ("left" in self.keys or "q" in self.keys)
         forward = ("w" in self.keys or "up" in self.keys) - ("s" in self.keys or "down" in self.keys)
-        strafe = ("e" in self.keys) - ("a" in self.keys)
+        strafe = ("d" in self.keys) - ("a" in self.keys)
         self.angle += turn * dt * 2.4
         self.move(forward * dt * 2.4, strafe * dt * 2.0)
 
